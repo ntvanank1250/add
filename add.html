@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinh cai gi do</title>
+</head>
+<body>
+    <table>
+<tr>
+    <td>So a:</td>
+ <td><input type="number" id="a"></td>
+</tr>
+<tr>
+    <td>So b:</td>
+    <td> <input type="number" id="b" onchange="run()"></td>
+</tr>
+
+
+    </table>
+    <script> function run() {
+         let a= Number(document.getElementById("a").value)
+        let b=Number(document.getElementById("b").value)
+        if ((a+b)<4){
+           alert('Tổng 2 số bé hơn 4')
+        }
+        else{
+            alert('Tổng 2 số lớn hơn 4')
+        }
+    }
+    </script>
+</body>
+</html>
